@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/woord" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/woord"
+        android:textSize="25dp"
+        android:layout_alignRight="@+id/buttonI"
+        android:layout_alignEnd="@+id/buttonI"
+        android:layout_below="@+id/hangmanImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hangmanImage"
+        android:src="@drawable/hangman1"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonTextA"
+        android:id="@+id/buttonA"
+        android:layout_above="@+id/buttonU"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonTextE"
+        android:id="@+id/buttonE"
+        android:layout_alignTop="@+id/buttonA"
+        android:layout_toRightOf="@+id/buttonA"
+        android:layout_toEndOf="@+id/buttonA"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonTextI"
+        android:id="@+id/buttonI"
+        android:layout_alignTop="@+id/buttonE"
+        android:layout_toRightOf="@+id/buttonE"
+        android:layout_toEndOf="@+id/buttonE"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonTextO"
+        android:id="@+id/buttonO"
+        android:layout_below="@+id/buttonA"
+        android:layout_alignLeft="@+id/woord"
+        android:layout_alignStart="@+id/woord"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonTextU"
+        android:id="@+id/buttonU"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+</RelativeLayout>
